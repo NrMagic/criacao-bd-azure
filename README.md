@@ -1,25 +1,56 @@
-# Guia para Configuração de Banco de Dados no Microsoft Azure
+# Laboratório: Configuração de Banco de Dados no Microsoft Azure
 
-## Introdução
-Este guia tem como objetivo ensinar o processo de criação de uma instância de banco de dados na plataforma Microsoft Azure. O banco de dados escolhido para este exercício é o **Azure SQL Database**.
+Este repositório contém resumos, anotações e dicas sobre a configuração de instâncias de Banco de Dados na plataforma **Microsoft Azure**.  
+O objetivo é servir como material de apoio para estudos e futuras implementações.
 
-## Passo 1: Criando a Instância de Banco de Dados
-1. Acesse o [Azure Portal](https://portal.azure.com).
-2. No menu lateral, clique em **Criar um recurso**.
-3. Busque por "SQL Database" e clique em **Criar**.
-4. Preencha os detalhes da instância: nome do banco, região, plano de preço.
-5. Configure a segurança de acesso definindo as regras de firewall.
+---
 
-## Passo 2: Configurando o Banco de Dados
-- Explique os parâmetros como:
-    - **Tamanho do banco de dados**
-    - **Opções de escalabilidade** (por exemplo, escalabilidade vertical ou horizontal)
-    - **Backup e recuperação**: como configurar backups automáticos.
+## 🎯 Objetivos de Aprendizagem
+- Aplicar conceitos aprendidos em um ambiente prático
+- Documentar processos técnicos de forma clara e estruturada
+- Utilizar o GitHub como ferramenta de compartilhamento de documentação técnica
 
-## Dicas e Boas Práticas
-- Utilize sempre **múltiplos pontos de recuperação**.
-- Configure **políticas de segurança** para garantir que apenas IPs autorizados possam acessar o banco.
-- Revise regularmente o uso de recursos para otimizar o custo.
+---
 
-## Conclusão
-Este guia cobriu os passos para criar e configurar uma instância de banco de dados no Microsoft Azure, além de oferecer boas práticas e dicas para gerenciar e otimizar o uso do serviço.
+## 🛠️ Passo a Passo: Criando uma Instância de Banco de Dados no Azure
+
+### 1. Acessar o Portal Azure
+- Entre em [portal.azure.com](https://portal.azure.com) com sua conta Microsoft.
+
+### 2. Criar um Recurso
+- Clique em **Criar um recurso**.
+- Selecione **Banco de Dados SQL** (ou MySQL/PostgreSQL, conforme sua necessidade).
+
+### 3. Configurar o Servidor
+- Defina:
+  - **Nome do servidor**
+  - **Usuário administrador**
+  - **Senha**
+  - **Região**
+
+### 4. Definir o Banco de Dados
+- Escolha o **nome do banco**.
+- Selecione o **plano de serviço** (ex.: Básico, Standard, Premium).
+- Configure **backup e redundância**.
+
+### 5. Regras de Firewall
+- Adicione o IP do seu computador para permitir conexões externas.
+
+### 6. Revisar e Criar
+- Revise as configurações.
+- Clique em **Criar** e aguarde a implantação.
+
+---
+
+
+## 💡 Dicas e Boas Práticas
+- Sempre configure **backup automático**.  
+- Use **Azure Monitor** para acompanhar desempenho.  
+- Restrinja acessos via firewall apenas a IPs confiáveis.  
+- Considere usar **Azure CLI** para automação.
+
+---
+
+## 📚 Referências
+- [Documentação oficial do Azure SQL Database](https://learn.microsoft.com/pt-br/azure/azure-sql/database/)  
+- [Azure CLI - SQL Database](https://learn.microsoft.com/pt-br/cli/azure/sql/db)  
